@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<script>
+if(!localStorage.getItem("user")){
+  window.location.href="./login.html";
+}
+</script>
+
+<div class="box">
+  <h2>Welcome to GK Quiz</h2>
+
+  <button onclick="goLevel()">Start Quiz</button>
+  <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="./script.js"></script>
+<script>
+function goLevel(){
+  window.location.href="./level.html";
+}
+</script>
+
+</body>
+</html>

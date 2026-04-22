@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<script>
+if(!localStorage.getItem("user")){
+  window.location.href="./login.html";
+}
+</script>
+
+<div class="box">
+  <h4 id="levelDisplay"></h4>
+  <h3 id="question"></h3>
+
+  <div id="progress"></div>
+  <p id="timer"></p>
+
+  <div id="options"></div>
+
+  <button onclick="nextQuestion()">Next</button>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
